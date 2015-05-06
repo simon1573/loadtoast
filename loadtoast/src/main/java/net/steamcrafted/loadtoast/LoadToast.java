@@ -63,6 +63,11 @@ public class LoadToast {
         return this;
     }
 
+    public LoadToast setTextTypeface(Typeface font){
+        mView.setTextTypeface(font);
+        return this;
+    }
+
     public LoadToast setBackgroundColor(int color){
         mView.setBackgroundColor(color);
         return this;

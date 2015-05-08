@@ -112,6 +112,10 @@ public class LoadToastView extends View {
         textPaint.setColor(color);
     }
 
+    public void setTextTypeface(Typeface font){
+        textPaint.setTypeface(font);
+    }
+
     public void setBackgroundColor(int color){
         backPaint.setColor(color);
         iconBackPaint.setColor(color);

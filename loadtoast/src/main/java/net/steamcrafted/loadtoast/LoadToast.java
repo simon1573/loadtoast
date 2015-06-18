@@ -2,6 +2,7 @@ package net.steamcrafted.loadtoast;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,6 +76,11 @@ public class LoadToast {
 
     public LoadToast setProgressColor(int color){
         mView.setProgressColor(color);
+        return this;
+    }
+
+    public LoadToast setTextSize(int size){
+        mView.setTextSize(size);
         return this;
     }
 

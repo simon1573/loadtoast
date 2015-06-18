@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.Log;
@@ -123,6 +124,11 @@ public class LoadToastView extends View {
 
     public void setProgressColor(int color){
         loaderPaint.setColor(color);
+    }
+
+    public void setTextSize(int size){
+        size = dpToPx(size);
+        textPaint.setTextSize(size);
     }
 
     public void show(){
